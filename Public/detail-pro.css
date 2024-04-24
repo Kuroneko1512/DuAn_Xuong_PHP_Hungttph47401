@@ -1,0 +1,84 @@
+.details-pro {
+    width: 100%;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    padding-top: 20px;
+    .up-area {
+        font-size: 18px;
+        display: flex;
+        .picture-area {
+            width: 30%;
+            overflow: hidden;
+            max-height: 400px;
+            img {
+                width: 100%;
+                height: auto;
+                transition-duration: 3s;
+                &:hover {
+                    transform: scale(2);
+                }
+            }
+        }
+        .text-area {
+            padding-left: 30px;
+            width: 70%;
+            .ten-sanpham {
+                font-size: 30px;
+                font-weight: bold;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+            }
+            .gia-sanpham {
+                padding-top: 20px;
+                font-size: 30px;
+                font-weight: bold;
+                color: red;
+            }
+            .mota-sanpham {
+                min-height: 80px;
+                max-height: 150px;
+            }
+            .cart {
+                input[type=number]::-webkit-inner-spin-button,
+                input[type=number]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                input[type=number] {
+                    -moz-appearance: textfield;
+                    appearance: textfield;
+                    /* Định nghĩa thuộc tính 'appearance' cho tương thích */
+                    width: 40px;
+                    height: 40px;
+                    padding: 5px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                button {
+                    margin-left: 20px;
+                    background-color: green;
+                    color: #fff;
+                    font-size: 18px;
+                    height: 40px;
+                    padding: 5px;
+                    text-align: center;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+        }
+    }
+    .detail-area {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        line-height: 2;
+        h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    }
+}
