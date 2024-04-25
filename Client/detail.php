@@ -1,5 +1,5 @@
 <?php
-    require 'Library/connection.php';
+    // require 'Library/connection.php';
     // Kiểm tra xem có tham số id được truyền từ URL không
     if(isset($_GET['id'])) {
         // Lấy id sản phẩm từ URL

@@ -9,11 +9,11 @@
     
     $sql_categories = "SELECT * FROM `categories`";
 
-    $stmt_categories = $conn->prepare($sql_categories);
+    $stmt_cate_id = $conn->prepare($sql_categories);
 
-    $stmt_categories->execute();  
+    $stmt_cate_id->execute();  
 
-    $danhMuc = $stmt_categories->fetchAll(PDO::FETCH_ASSOC);
+    $danhMuc = $stmt_cate_id->fetchAll(PDO::FETCH_ASSOC);
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $ten_sanPham = $_POST['product_name'];

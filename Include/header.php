@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Public/INdex.css">
     <link rel="stylesheet" href="Public/Admin-list.css">
     <link rel="stylesheet" href="Public/detail-pro.css">
+    <link rel="stylesheet" href="Public/cart.css">
 </head>
 
 <body>

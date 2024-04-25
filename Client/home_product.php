@@ -1,13 +1,13 @@
 <?php 
-    require 'Library/connection.php';
+    // require 'Library/connection.php';
 
     $sql_categories = "SELECT categories_name FROM categories";
 
-    $stmt_categories = $conn->prepare($sql_categories);
+    $stmt_cate_id = $conn->prepare($sql_categories);
 
-    $stmt_categories->execute();
+    $stmt_cate_id->execute();
 
-    $loai_sanPhams = $stmt_categories->fetchAll(PDO::FETCH_COLUMN);
+    $loai_sanPhams = $stmt_cate_id->fetchAll(PDO::FETCH_COLUMN);
 
 
 ?>
